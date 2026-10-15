@@ -1,0 +1,11 @@
+services:
+    apache:
+      build: ./apache
+      image: imagen-parcial2
+      container_name: parcial2-repe
+      restart: always
+      ports:
+        - "8090:80"
+      volumes:
+        - ./parcial2Repe:/var/www/html
+      
