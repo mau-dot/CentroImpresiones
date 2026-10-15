@@ -7,8 +7,8 @@ use App\Models\TrabajoImpresion;
 
 class ImpresionColor extends TrabajoImpresion{
 
-    public function __construct(public Papel $papel){
-
+    public function __construct(string $descripcion, int $paginas, int $copias, public Papel $papel){
+        parent::__construct($descripcion, $paginas, $copias);
     }
 
     public function precioPorPagina(): float{

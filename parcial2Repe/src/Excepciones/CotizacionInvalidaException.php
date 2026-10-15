@@ -1,5 +1,6 @@
 <?php
-namespace App\Exceptions;
+declare(strict_types=1);
+namespace App\Excepciones;
 use DomainException;
 
 class CotizacionInvalidaException extends DomainException{
@@ -8,5 +9,3 @@ class CotizacionInvalidaException extends DomainException{
         parent::__construct("El campo $campo es invalido");
     }
 }
-
-?>

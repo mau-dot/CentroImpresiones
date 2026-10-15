@@ -6,7 +6,8 @@ use App\Enums\Papel;
 class ImpresionBN extends TrabajoImpresion{
 
     public Papel $papel;
-    public function __construct(){
+    public function __construct(string $descripcion, int $paginas, int $copias){
+        parent::__construct($descripcion, $paginas, $copias);
         $this->papel = Papel::Bond;
     }
 
